@@ -2,22 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "server.js",
+      "src": "api/*.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "server.js"
+      "src": "/api/gemini",
+      "dest": "/api/gemini.js"
     },
     {
-      "src": "/",
-      "dest": "index.html"
+      "src": "/api/chatgpt",
+      "dest": "/api/chatgpt.js"
     }
   ]
 }
