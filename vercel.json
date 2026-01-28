@@ -1,19 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/*.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/gemini",
-      "dest": "/api/gemini.js"
-    },
-    {
-      "src": "/api/chatgpt",
-      "dest": "/api/chatgpt.js"
-    }
-  ]
+  "framework": null,
+  "outputDirectory": "public"
 }
